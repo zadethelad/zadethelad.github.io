@@ -202,8 +202,11 @@ tr:hover {
 }
 .shop-item__image {
   border-radius: 10px;
-  width: 200px;
-  height: 100px;
+  min-width: 150px;
+  min-height: 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 .shop-item__words {
   margin-left: 20px;
@@ -279,6 +282,14 @@ tr:hover {
   }
   .profile__bio {
     font-size: 270%;
+  }
+}
+@media (max-width: 825px) {
+  .shop-item__image {
+    min-height: 200px;
+    min-width: 200px;
+    height: 200px;
+    width: 200px;
   }
 }
 

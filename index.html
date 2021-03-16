@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About me</title>
-  <link rel="stylesheet" href="about.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zade Viggers</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 60px;
+
+
+        }
+        h1 {
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 70px;
+        }
+        ul {
+            margin: 10px;
+            text-align: center;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        li {
+            margin: 5px;
+            font-size: 24px;
+        }
+
+        a {
+            color: #009ef3;
+        }
+        a:hover, a:focus {
+            color: #0090dd;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body class="page">
-  <nav class="navigation">
-    <ul class="navigation-items">
-      <li><a rel="noopener" href="/" class="active navigation-items__item">About me</a></li>
-      <li><a rel="noopener" href="/timetable/" class="navigation-items__item">Timetable</a></li>
-      <li><a rel="noopener" href="/interests/" class="navigation-items__item">Interests</a></li>
-      <li><a rel="noopener" href="/contact/" class="navigation-items__item">Contact</a></li>
-    </ul>
-    <a rel="noopener" href="/shop/" class="call_to_action">SHOP</a>
-  </nav>
-  <main class="page-content">
-    <section class="profile">
-      <img src="/assets/me.png" alt="Picture of me" class="profile__image"/>
-      <article class="profile__words">
-        <h2 class="profile__name">Zade Viggers</h2>
-        <p class="profile__bio">
-          Hey there 👋, I'm Zade. I'm a year 10 student at Wellington College.
-          I'm intersted in computer programing, art and english.
-          I was born on the 17th of August, 2005
-          (that means I'm 15 when I'm writing this).
-        </p>
-      </article>
-    </section>
-  </main>
-  <footer class="footer">Copyright (c) 2020 Zade Viggers</footer>
+<body>
+    <main>
+        <h1>Zade Viggers</h1>
+        <ul>
+            <li><a href="https://twitter.com/zadeviggers" rel="noopener" target="_blank" class="twitter">Twitter</a></li>
+            <li><a href="https://instagram.com/zade.viggers" rel="noopener" target="_blank" class="instagram">Instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UC9qCNC0Vi8s-1CM9AG2vWCA?sub_confirmation=1" rel="noopener" target="_blank" class="youtube">Youtube</a></li>
+            <li><a href="https://github.com/zadethelad" rel="noopener" target="_blank" class="github">Github</a></li>
+        </ul>
+    </main>
 </body>
 </html>
